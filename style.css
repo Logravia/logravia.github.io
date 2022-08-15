@@ -1,0 +1,70 @@
+@font-face {
+    font-family: pacifico;
+    src: url(pacifico.ttf);
+  }
+
+h1 {
+    margin: 0;
+    font-family: pacifico;
+    color: 		rgb(48, 25, 52);
+    font-size: 3.6em;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+p {
+    font-family: pacifico;
+    font-size: 2.2em;
+text-shadow: 0px 4px 3px rgba(216, 208, 208, 0.4),
+             0px 8px 13px rgba(236, 236, 236, 0.1),
+             0px 18px 23px rgba(238, 236, 236, 0.1);
+}
+
+#card {
+    padding: 20px;
+    margin: 0 auto;
+    width: 800px;
+    height: 680px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#square-container {
+    width: 800px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position: absolute;
+    z-index: -10;
+}
+
+.row {
+    display: flex;
+    flex: 0 1 auto;
+    width: fit-content;
+}
+
+#wishes {
+    padding: 0 1em;
+}
+
+h1 {
+    text-align: center;
+} 
+
+#pusheen img {
+    width: 40%;
+    transform: scaleX(-1);
+    position: relative;
+    right: 10px;
+}
+
+#pusheen {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pixel {
+    width: 40px;
+    height: 40px;
+}
