@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Happy Birthday, Abberino-Tatarino</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="card">
-        <div id="square-container"></div>
-        <div id="wishes">
-            <h1>Happy birthday, Abby!</h1>
-            <p>Wishing you a truly meowgical birthday! Have a totally pawsome day!</p>
-     </div>
-    <div id="pusheen">
-        <img src="cat.png">
+    <title>Game of Life</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+    <div class="card">
+        <div class="title">
+        <h1>Game Of Life</h1>
+    <div class="controls">
+
+        <div class="control">
+            <button id="play">Play</button>
+            <button id="step">Step</button>
+            <button id="pause">Pause</button>
+            <button id="clear">Clear</button>
+        </div>
     </div>
+        </div>
+        <div class="canvas"></div>
     </div>
-  </body>
-  <script src="index.js"></script>
+    </main>
+</body>
+
 </html>

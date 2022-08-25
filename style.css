@@ -1,41 +1,44 @@
-@font-face {
-    font-family: pacifico;
-    src: url(pacifico.ttf);
-  }
-
-h1 {
-    margin: 0;
-    font-family: pacifico;
-    color: 		rgb(48, 25, 52);
-    font-size: 3.6em;
-    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+body {
+    background-color: #21233D;
 }
 
-p {
-    font-family: pacifico;
-    font-size: 2.2em;
-text-shadow: 0px 4px 3px rgba(216, 208, 208, 0.4),
-             0px 8px 13px rgba(236, 236, 236, 0.1),
-             0px 18px 23px rgba(238, 236, 236, 0.1);
+main {
+    display: flex;
+    justify-content: center;
 }
 
-#card {
-    padding: 20px;
-    margin: 0 auto;
-    width: 800px;
-    height: 680px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgba(255,255,255,0.5);
+.title {
+    color: #EEEACC;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
-#square-container {
-    width: 800px;
-    height: 680px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: monospace;
+}
+
+.card h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.canvas {
+    background-color: #EEEACC;
     display: flex;
     flex-direction: column;
+    width: fit-content;
     align-self: flex-end;
-    position: absolute;
-    z-index: -10;
+    margin-left: 1.5rem;
+
+    border-style: solid;
+    border-width: 1rem;
+    border-color: black;
+    border-radius: 0.2rem;
 }
 
 .row {
@@ -44,27 +47,47 @@ text-shadow: 0px 4px 3px rgba(216, 208, 208, 0.4),
     width: fit-content;
 }
 
-#wishes {
-    padding: 0 1em;
-}
-
-h1 {
-    text-align: center;
-} 
-
-#pusheen img {
-    width: 40%;
-    transform: scaleX(-1);
-    position: relative;
-    right: 10px;
-}
-
-#pusheen {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .pixel {
-    width: 40px;
-    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    align-self: center;
+    justify-content: center;
+}
+
+.themes {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls button {
+    margin-bottom: 0.2rem;
+}
+
+button {
+    background-color: #A08983;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    transition-duration: 0.4s;
+    font-family: monospace;
+}
+
+button:hover {
+    background-color: #347736;
 }
